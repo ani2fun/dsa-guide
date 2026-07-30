@@ -1,0 +1,17 @@
+{
+  "args": [
+    { "id": "strs", "label": "strs", "type": "string[]", "placeholder": "[\"flowers\", \"flow\", \"fly\", \"flight\"]" }
+  ],
+  "cases": [
+    { "args": { "strs": "[\"flowers\", \"flow\", \"fly\", \"flight\"]" }, "expected": "fl", "sample": true },
+    { "args": { "strs": "[\"dog\", \"cat\", \"animal\", \"monkey\"]" }, "expected": "", "sample": true },
+    { "args": { "strs": "[\"lady\", \"lazy\"]" }, "expected": "la", "sample": true },
+    { "args": { "strs": "[\"alone\"]" }, "expected": "alone" },
+    { "args": { "strs": "[\"abc\", \"abc\", \"abc\"]" }, "expected": "abc" },
+    { "args": { "strs": "[\"abc\", \"abd\"]" }, "expected": "ab" },
+    { "args": { "strs": "[\"prefix\", \"pre\"]" }, "expected": "pre" },
+    { "args": { "strs": "[\"x\", \"y\"]" }, "expected": "" },
+    { "args": { "strs": "[\"ab\", \"abc\", \"abcd\"]" }, "expected": "ab" },
+    { "args": { "strs": "[\"same\", \"same\"]" }, "expected": "same" }
+  ]
+}

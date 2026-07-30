@@ -1,0 +1,17 @@
+{
+  "args": [
+    { "id": "s", "label": "s", "type": "string", "placeholder": "hannah" }
+  ],
+  "cases": [
+    { "args": { "s": "hannah" }, "expected": "true", "sample": true },
+    { "args": { "s": "aabbaaa" }, "expected": "false", "sample": true },
+    { "args": { "s": "racecar" }, "expected": "true" },
+    { "args": { "s": "a" }, "expected": "true" },
+    { "args": { "s": "ab" }, "expected": "false" },
+    { "args": { "s": "abba" }, "expected": "true" },
+    { "args": { "s": "abc" }, "expected": "false" },
+    { "args": { "s": "noon" }, "expected": "true" },
+    { "args": { "s": "abca" }, "expected": "false" },
+    { "args": { "s": "aa" }, "expected": "true" }
+  ]
+}

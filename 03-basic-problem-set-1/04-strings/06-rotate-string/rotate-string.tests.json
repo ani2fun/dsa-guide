@@ -1,0 +1,20 @@
+{
+  "args": [
+    { "id": "s", "label": "s", "type": "string", "placeholder": "abcde" },
+    { "id": "goal", "label": "goal", "type": "string", "placeholder": "cdeab" }
+  ],
+  "cases": [
+    { "args": { "s": "abcde", "goal": "cdeab" }, "expected": "true", "sample": true },
+    { "args": { "s": "abcde", "goal": "adeac" }, "expected": "false", "sample": true },
+    { "args": { "s": "abcde", "goal": "abcde" }, "expected": "true", "sample": true },
+    { "args": { "s": "a", "goal": "a" }, "expected": "true" },
+    { "args": { "s": "ab", "goal": "ba" }, "expected": "true" },
+    { "args": { "s": "abc", "goal": "cba" }, "expected": "false" },
+    { "args": { "s": "aa", "goal": "aa" }, "expected": "true" },
+    { "args": { "s": "abcde", "goal": "abced" }, "expected": "false" },
+    { "args": { "s": "abab", "goal": "abab" }, "expected": "true" },
+    { "args": { "s": "abcd", "goal": "dabc" }, "expected": "true" },
+    { "args": { "s": "abc", "goal": "abcd" }, "expected": "false" },
+    { "args": { "s": "a", "goal": "b" }, "expected": "false" }
+  ]
+}

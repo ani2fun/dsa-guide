@@ -1,0 +1,15 @@
+{
+    "title": "DSA",
+    "description": "Data Structure & ALgorithms Step by Step From Basics to Advanced.",
+    "tags": [
+        "computer-science",
+        "data-structures",
+        "algorithms",
+        "dsa",
+        "interview-prep",
+        "systems"
+    ],
+    "estimatedReadingMinutes": 1400,
+    "order": 5,
+    "slug": "dsa"
+}

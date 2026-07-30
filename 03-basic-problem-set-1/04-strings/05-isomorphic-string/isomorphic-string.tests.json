@@ -1,0 +1,18 @@
+{
+  "args": [
+    { "id": "s", "label": "s", "type": "string", "placeholder": "egg" },
+    { "id": "t", "label": "t", "type": "string", "placeholder": "add" }
+  ],
+  "cases": [
+    { "args": { "s": "egg", "t": "add" }, "expected": "true", "sample": true },
+    { "args": { "s": "apple", "t": "bbnbm" }, "expected": "false", "sample": true },
+    { "args": { "s": "paper", "t": "title" }, "expected": "true", "sample": true },
+    { "args": { "s": "a", "t": "a" }, "expected": "true" },
+    { "args": { "s": "ab", "t": "cd" }, "expected": "true" },
+    { "args": { "s": "aa", "t": "ab" }, "expected": "false" },
+    { "args": { "s": "ab", "t": "aa" }, "expected": "false" },
+    { "args": { "s": "foo", "t": "bar" }, "expected": "false" },
+    { "args": { "s": "abc", "t": "xyz" }, "expected": "true" },
+    { "args": { "s": "badc", "t": "baba" }, "expected": "false" }
+  ]
+}

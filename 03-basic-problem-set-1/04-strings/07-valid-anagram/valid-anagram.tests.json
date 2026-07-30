@@ -1,0 +1,20 @@
+{
+  "args": [
+    { "id": "s", "label": "s", "type": "string", "placeholder": "anagram" },
+    { "id": "t", "label": "t", "type": "string", "placeholder": "nagaram" }
+  ],
+  "cases": [
+    { "args": { "s": "anagram", "t": "nagaram" }, "expected": "true", "sample": true },
+    { "args": { "s": "dog", "t": "cat" }, "expected": "false", "sample": true },
+    { "args": { "s": "eat", "t": "tea" }, "expected": "true", "sample": true },
+    { "args": { "s": "a", "t": "a" }, "expected": "true" },
+    { "args": { "s": "a", "t": "b" }, "expected": "false" },
+    { "args": { "s": "ab", "t": "ba" }, "expected": "true" },
+    { "args": { "s": "aa", "t": "ab" }, "expected": "false" },
+    { "args": { "s": "abc", "t": "abcd" }, "expected": "false" },
+    { "args": { "s": "listen", "t": "silent" }, "expected": "true" },
+    { "args": { "s": "rat", "t": "car" }, "expected": "false" },
+    { "args": { "s": "aacc", "t": "ccac" }, "expected": "false" },
+    { "args": { "s": "z", "t": "z" }, "expected": "true" }
+  ]
+}
