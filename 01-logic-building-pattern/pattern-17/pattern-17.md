@@ -10,22 +10,22 @@ topics: [patterns, loops]
 # Pattern 17
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
-```
-    A
-   ABA
-  ABCBA
- ABCDCBA
-ABCDEDCBA
-```
 
+> ```
+>     A
+>    ABA
+>   ABCBA
+>  ABCDCBA
+> ABCDEDCBA
+> ```
 
 Print the pattern in the function given to you.
 
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 >    A
 >   ABA
@@ -33,10 +33,10 @@ Print the pattern in the function given to you.
 > ABCDCBA
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 >  A
 > ABA
@@ -44,7 +44,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 26`
+> `1 <= n <= 26`
 
 ```python run
 class Solution:
@@ -78,18 +78,7 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** This programming problem essentially tests the concept of pattern/problem recognition and string manipulation, which are vital in many areas of software development.
-
-</div>
-
-### Fact 2
-For instance, in data analysis or processing platforms, there often are requirements to detect and manipulate data patterns.
-
-### Fact 3
-Moreover, in various machine learning models such as natural language processing, the concept of pattern recognition and string manipulation is extensively used to train the models to understand, recognize, and generate human-like text.
+> - This programming problem essentially tests the concept of pattern/problem recognition and string manipulation, which are vital in many areas of software development.
+> - For instance, in data analysis or processing platforms, there often are requirements to detect and manipulate data patterns.
+> - Moreover, in various machine learning models such as natural language processing, the concept of pattern recognition and string manipulation is extensively used to train the models to understand, recognize, and generate human-like text.

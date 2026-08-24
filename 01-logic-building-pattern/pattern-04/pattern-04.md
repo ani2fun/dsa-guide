@@ -11,20 +11,20 @@ topics: [patterns, loops]
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
 
-```
-1
-22
-333
-4444
-55555
-```
+> ```
+> 1
+> 22
+> 333
+> 4444
+> 55555
+> ```
 
 Print the pattern in the function given to you.
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > 1
 > 22
@@ -32,10 +32,10 @@ Print the pattern in the function given to you.
 > 4444
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > 1
 > 22
@@ -43,7 +43,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:
@@ -77,24 +77,9 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** Many website and application development technologies use the concept underlying this problem, known as "looping".
-
-</div>
-
-### Fact 2
-For example, in Javascript, repeating elements are often rendered in a webpage using loops.
-
-### Fact 3
-If a React developer needs to display a repeating component, they could use a pattern similar to the given problem.
-
-### Fact 4
-This could be a list where each item should display a number of times corresponding to its value, like stars in a rating system or in creating user interface patterns.
-
-### Fact 5
-It's a fundamental concept in creating dynamic content based on variable data.
+> - Many website and application development technologies use the concept underlying this problem, known as "looping".
+> - For example, in Javascript, repeating elements are often rendered in a webpage using loops.
+> - If a React developer needs to display a repeating component, they could use a pattern similar to the given problem.
+> - This could be a list where each item should display a number of times corresponding to its value, like stars in a rating system or in creating user interface patterns.
+> - It's a fundamental concept in creating dynamic content based on variable data.

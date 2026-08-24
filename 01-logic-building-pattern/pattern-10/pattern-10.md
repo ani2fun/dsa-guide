@@ -11,26 +11,25 @@ topics: [patterns, loops]
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
 
-```
-*
-**
-***
-****
-*****
-****
-***
-**
-*
-```
-
+> ```
+> *
+> **
+> ***
+> ****
+> *****
+> ****
+> ***
+> **
+> *
+> ```
 
 Print the pattern in the function given to you.
 
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > *
 > **
@@ -41,10 +40,10 @@ Print the pattern in the function given to you.
 > *
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > *
 > **
@@ -53,7 +52,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:
@@ -87,18 +86,7 @@ public class Main {
 }
 ```
 
-
-
-## Fun Facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** In the software development, this pattern problem, or its underlying concept of nested iteration, can often be observed in creating visual effects or graphical interfaces.
-
-</div>
-
-### Fact 2
-For example, such pattern logic might be used in creating loading animations, pyramid diagrams, or automated design elements in a web or mobile application.
-
-### Fact 3
-On a more abstract level, understanding how to construct and manipulate such patterns is fundamental to working with 2D arrays and matrices - structures widely used in image processing, to represent graphs, in machine learning algorithms, and more.
+## Fun facts
+> - In the software development, this pattern problem, or its underlying concept of nested iteration, can often be observed in creating visual effects or graphical interfaces.
+> - For example, such pattern logic might be used in creating loading animations, pyramid diagrams, or automated design elements in a web or mobile application.
+> - On a more abstract level, understanding how to construct and manipulate such patterns is fundamental to working with 2D arrays and matrices - structures widely used in image processing, to represent graphs, in machine learning algorithms, and more.

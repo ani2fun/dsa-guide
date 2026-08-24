@@ -10,22 +10,22 @@ topics: [patterns, loops]
 # Pattern 2
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
-```
-*
-**
-***
-****
-*****
-```
 
+> ```
+> *
+> **
+> ***
+> ****
+> *****
+> ```
 
 Print the pattern in the function given to you.
 
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > *
 > **
@@ -33,10 +33,10 @@ Print the pattern in the function given to you.
 > ****
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > *
 > **
@@ -44,7 +44,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:

@@ -94,6 +94,6 @@ public class Main {
 
 ## Complexity Analysis
 
-**Time Complexity:** O(N²) The time complexity is dominated by the nested loops, which both iterate 2×N-1 times. Therefore, the overall time complexity is O((2×N-1)²), which simplifies to O(N²), where N is the number of rows.
+**Time Complexity:** O(N²). The time complexity is dominated by the nested loops, which both iterate 2×N-1 times. Therefore, the overall time complexity is O((2×N-1)²), which simplifies to O(N²), where N is the number of rows.
 
-**Space Complexity:** O(1), as no extra space is being used to print the patterns.
+**Space Complexity:** O(1). As no extra space is being used to print the patterns.

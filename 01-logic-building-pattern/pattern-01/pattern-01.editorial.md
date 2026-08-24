@@ -75,6 +75,6 @@ public class Main {
 
 ## Complexity Analysis
 
-**Time Complexity:** O(N²) As two for loops are being used to print the patterns and both of them runs for N time.
+**Time Complexity:** O(N²). As two for loops are being used to print the patterns and both of them runs for N time.
 
-**Space Complexity:** As no additional space is used, so the Space Complexity is O(1)
+**Space Complexity:** O(1). As no additional space is used, so the Space Complexity is O(1).

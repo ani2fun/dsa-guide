@@ -11,25 +11,25 @@ topics: [patterns, loops]
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
 
-```
-**********
-****  ****
-***    ***
-**      **
-*        *
-*        *
-**      **
-***    ***
-****  ****
-**********
-```
+> ```
+> **********
+> ****  ****
+> ***    ***
+> **      **
+> *        *
+> *        *
+> **      **
+> ***    ***
+> ****  ****
+> **********
+> ```
 
 Print the pattern in the function given to you.
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > ********
 > ***  ***
@@ -41,10 +41,10 @@ Print the pattern in the function given to you.
 > ********
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > ****
 > *  *
@@ -54,7 +54,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:
@@ -88,21 +88,8 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** The concept underlying this problem, pattern generation, is frequently used in various aspects of software development.
-
-</div>
-
-### Fact 2
-For example, in game development, similar algorithms are introduced to generate unique textures or to progress game levels.
-
-### Fact 3
-In data visualization libraries and apps, pattern generation algorithms are used to create aesthetically pleasing and easy to understand visual representations of data.
-
-### Fact 4
-Furthermore, ASCII art, which is similar to this problem, has applications in stylizing console output and creating visually appealing comment blocks in code.
+> - The concept underlying this problem, pattern generation, is frequently used in various aspects of software development.
+> - For example, in game development, similar algorithms are introduced to generate unique textures or to progress game levels.
+> - In data visualization libraries and apps, pattern generation algorithms are used to create aesthetically pleasing and easy to understand visual representations of data.
+> - Furthermore, ASCII art, which is similar to this problem, has applications in stylizing console output and creating visually appealing comment blocks in code.

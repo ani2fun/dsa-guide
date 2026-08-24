@@ -10,22 +10,21 @@ topics: [patterns, loops]
 # Pattern 5
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
-```
-*****
-****
-***
-**
-*
-```
 
-
+> ```
+> *****
+> ****
+> ***
+> **
+> *
+> ```
 
 Print the pattern in the function given to you.
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > ****
 > ***
@@ -33,10 +32,10 @@ Print the pattern in the function given to you.
 > *
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > **
 > *
@@ -44,7 +43,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:
@@ -78,18 +77,7 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** This basic problem is designed to test your understanding of loops and string manipulation, which are basic in almost any programming language.
-
-</div>
-
-### Fact 2
-In the real world, similar patterns and principles might be used for creating complex data visualization tools, ASCII art, or templating engines that generate HTML for web pages.
-
-### Fact 3
-Drawing patterns, grids, or other specific shapes is often a core part of game development as well, so praticing such problems can be a kick-start towards learning how to develop basic graphical elements in game designing.
+> - This basic problem is designed to test your understanding of loops and string manipulation, which are basic in almost any programming language.
+> - In the real world, similar patterns and principles might be used for creating complex data visualization tools, ASCII art, or templating engines that generate HTML for web pages.
+> - Drawing patterns, grids, or other specific shapes is often a core part of game development as well, so praticing such problems can be a kick-start towards learning how to develop basic graphical elements in game designing.

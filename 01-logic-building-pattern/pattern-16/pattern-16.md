@@ -10,22 +10,22 @@ topics: [patterns, loops]
 # Pattern 16
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
-```
-A
-BB
-CCC
-DDDD
-EEEEE
-```
 
+> ```
+> A
+> BB
+> CCC
+> DDDD
+> EEEEE
+> ```
 
 Print the pattern in the function given to you.
 
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 > A
 > BB
@@ -33,10 +33,10 @@ Print the pattern in the function given to you.
 > DDDD
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 > A
 > BB
@@ -44,7 +44,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 26`
+> `1 <= n <= 26`
 
 ```python run
 class Solution:
@@ -78,21 +78,8 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** This problem may seem simple but it mirrors a fundamental concept in programming: loops and control structures.
-
-</div>
-
-### Fact 2
-While in this problem it is used to print patterns, in real world applications, these loops could be used to iterate through data, increment counters, insert into databases or update UI components.
-
-### Fact 3
-Moreover, concepts used in this problem are extensively used in animation software, framework development, and even in game development where such pattern logic can be used to create various levels or stages.
-
-### Fact 4
-So next time when you see a pattern in a game, remember, it could be something as simple as this problem behind the scene!.
+> - This problem may seem simple but it mirrors a fundamental concept in programming: loops and control structures.
+> - While in this problem it is used to print patterns, in real world applications, these loops could be used to iterate through data, increment counters, insert into databases or update UI components.
+> - Moreover, concepts used in this problem are extensively used in animation software, framework development, and even in game development where such pattern logic can be used to create various levels or stages.
+> - So next time when you see a pattern in a game, remember, it could be something as simple as this problem behind the scene!.

@@ -11,20 +11,20 @@ topics: [patterns, loops]
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
 
-```text
-A
-AB
-ABC
-ABCD
-ABCDE
-```
+> ```text
+> A
+> AB
+> ABC
+> ABCD
+> ABCDE
+> ```
 
 Print the pattern in the function given to you.
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```text
 > A
 > AB
@@ -32,10 +32,10 @@ Print the pattern in the function given to you.
 > ABCD
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```text
 > A
 > AB
@@ -43,7 +43,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 26`
+> `1 <= n <= 26`
 
 ```python run
 class Solution:
@@ -77,27 +77,10 @@ public class Main {
 }
 ```
 
-
-
 ## Fun facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** This programming problem trains you in understanding and manipulating strings, which is a fundamental concept in software development.
-
-</div>
-
-### Fact 2
-In real-world applications, this exercise could apply to systems requiring hierarchical data representation or nested data structures.
-
-### Fact 3
-For instance, consider a file manager where files/folders are nested within other folders.
-
-### Fact 4
-Each level of the hierarchy could be represented by a different letter of the alphabet, giving a visual indicator of the current depth in the hierarchy.
-
-### Fact 5
-Likewise, file paths in Unix-like operating systems could be shown using this pattern, with each subsequent directory represented by an additional alphabet letter.
-
-### Fact 6
-This problem can also have its applications in generating different patterns which is a key aspect of creating graphs or visualizations in software applications.
+> - This programming problem trains you in understanding and manipulating strings, which is a fundamental concept in software development.
+> - In real-world applications, this exercise could apply to systems requiring hierarchical data representation or nested data structures.
+> - For instance, consider a file manager where files/folders are nested within other folders.
+> - Each level of the hierarchy could be represented by a different letter of the alphabet, giving a visual indicator of the current depth in the hierarchy.
+> - Likewise, file paths in Unix-like operating systems could be shown using this pattern, with each subsequent directory represented by an additional alphabet letter.
+> - This problem can also have its applications in generating different patterns which is a key aspect of creating graphs or visualizations in software applications.

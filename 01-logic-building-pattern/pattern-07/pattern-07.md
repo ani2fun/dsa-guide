@@ -10,22 +10,22 @@ topics: [patterns, loops]
 # Pattern 7
 
 Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
-```
-    *
-   ***
-  *****
- *******
-*********
-```
 
+> ```
+>     *
+>    ***
+>   *****
+>  *******
+> *********
+> ```
 
 Print the pattern in the function given to you.
 
 
-## Example 1
+### Example 1
 
-> **Input :** n = 4  
-> **Output :**
+> - **Input :** n = 4
+> - **Output :**
 > ```
 >    *
 >   ***
@@ -33,10 +33,10 @@ Print the pattern in the function given to you.
 > *******
 > ```
 
-## Example 2
+### Example 2
 
-> **Input :** n = 2  
-> **Output :**
+> - **Input :** n = 2
+> - **Output :**
 > ```
 >  *
 > ***
@@ -45,7 +45,7 @@ Print the pattern in the function given to you.
 
 ## Constraints
 
-`1 <= n <= 100`
+> `1 <= n <= 100`
 
 ```python run
 class Solution:
@@ -79,18 +79,7 @@ public class Main {
 }
 ```
 
-
-
-## Fun Facts
-
-<div style="border-left:4px solid #195045;background:rgba(25,80,69,0.08);padding:0.6rem 1rem;border-radius:0 0.5rem 0.5rem 0;margin:1.25rem 0">
-
-💡 **Insight.** This problem, at its core, is about iteration, conditional logic, and string manipulation - fundamental concepts in many programming languages.
-
-</div>
-
-### Fact 2
-In real world applications, a form of this problem can be seen in creating dynamic visualizations or graphical outputs in console-based applications.
-
-### Fact 3
-For example, console-based games, progress bar visualization, and console animations all use similar logic to create dynamic, visually-oriented outputs.
+## Fun facts
+> - This problem, at its core, is about iteration, conditional logic, and string manipulation - fundamental concepts in many programming languages.
+> - In real world applications, a form of this problem can be seen in creating dynamic visualizations or graphical outputs in console-based applications.
+> - For example, console-based games, progress bar visualization, and console animations all use similar logic to create dynamic, visually-oriented outputs.
