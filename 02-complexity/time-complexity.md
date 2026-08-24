@@ -6,26 +6,26 @@ essential: true
 
 # Bite Size
 
-> Big-O notation measures **Rate of Growth (RoG)**.
+> Big-O notation measures **Rate of Growth**.
 
 - It answers one question: *When your input gets larger, how do your time and memory requirements grow?*
 
 ---
 
-If it grows with the input $\rightarrow$ **Variable Complexity ($O(\log N)$, $O(N)$, $O(N \log N)$, $O(N^2)$, $O(2^N)$, $O(N!)$):**
+If it grows with the input ☛ **Variable Complexity : `O(log N)` → `O(N)`→ `O(NlogN)` → `O(N^2)` → `O(2^N)` → `O(N!)`:**
 
 * **Time (Execution Speed):**
-* *Concept:* Double the digits $\rightarrow$ Double the loop runs ($O(d)$).
+* *Concept:* Double the digits ☛ Double the loop runs `O(d)`.
 * *Example:* `while n > 0` drops one digit per step. A 10-digit number takes 10 loops; a 5-digit number takes 5 loops.
 
 
 * **Space (Memory Usage):**
-* *Concept:* Double the digits $\rightarrow$ Double the memory needed ($O(d)$).
-* *Example:* Converting the number to a string (`str(n)`). A longer number literally takes up more space in memory.
+* *Concept:* Double the digits ☛ Double the memory needed `O(d)`.
+* *Example:* Converting the number to a string `str(n)`. A longer number literally takes up more space in memory.
 
 ---
 
-If it stays flat no matter what $\rightarrow$ **Constant Complexity ($O(1)$):**
+If it stays flat no matter what ☛ **Constant Complexity `O(1)`:**
 
 * **Time (Execution Speed):**
 * *Concept:* Input size doesn't change the speed.
