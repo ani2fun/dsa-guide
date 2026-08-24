@@ -4,6 +4,38 @@ summary: "How to reason about algorithm efficiency using Big O, Theta, and Omega
 essential: true
 ---
 
+# Bite Size
+
+> Big-O notation measures **Rate of Growth (RoG)**.
+
+- It answers one question: *When your input gets larger, how do your time and memory requirements grow?*
+
+---
+
+If it grows with the input $\rightarrow$ **Variable Complexity ($O(\log N)$, $O(N)$, $O(N \log N)$, $O(N^2)$, $O(2^N)$, $O(N!)$):**
+
+* **Time (Execution Speed):**
+* *Concept:* Double the digits $\rightarrow$ Double the loop runs ($O(d)$).
+* *Example:* `while n > 0` drops one digit per step. A 10-digit number takes 10 loops; a 5-digit number takes 5 loops.
+
+
+* **Space (Memory Usage):**
+* *Concept:* Double the digits $\rightarrow$ Double the memory needed ($O(d)$).
+* *Example:* Converting the number to a string (`str(n)`). A longer number literally takes up more space in memory.
+
+---
+
+If it stays flat no matter what $\rightarrow$ **Constant Complexity ($O(1)$):**
+
+* **Time (Execution Speed):**
+* *Concept:* Input size doesn't change the speed.
+* *Example:* Accessing the first element of an array takes the exact same time whether it has 5 items or 5,000,000 items.
+
+
+* **Space (Memory Usage):**
+* *Concept:* Input size doesn't change the memory used.
+* *In our code:* Processing a 1,000-digit number uses the exact same 3 variables (`copy`, `revNum`, `lastDigit`) as processing a 1-digit number. Memory never expands.
+
 # Understanding Time and Space Complexity
 
 In software engineering, every algorithm possesses a certain level of complexity, which is crucial in determining its efficiency. Complexity is typically measured in two ways:
