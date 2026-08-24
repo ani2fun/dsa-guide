@@ -1,0 +1,17 @@
+{
+  "args": [
+    { "id": "s", "label": "s", "type": "string", "placeholder": "tree" }
+  ],
+  "cases": [
+    { "args": { "s": "tree" }, "expected": "[e, r, t]", "sample": true },
+    { "args": { "s": "raaaajj" }, "expected": "[a, j, r]", "sample": true },
+    { "args": { "s": "bbccddaaa" }, "expected": "[a, b, c, d]", "sample": true },
+    { "args": { "s": "a" }, "expected": "[a]" },
+    { "args": { "s": "aabbcc" }, "expected": "[a, b, c]" },
+    { "args": { "s": "zyx" }, "expected": "[x, y, z]" },
+    { "args": { "s": "aaaaa" }, "expected": "[a]" },
+    { "args": { "s": "abcabcabc" }, "expected": "[a, b, c]" },
+    { "args": { "s": "ccbba" }, "expected": "[b, c, a]" },
+    { "args": { "s": "zzyyxx" }, "expected": "[x, y, z]" }
+  ]
+}
