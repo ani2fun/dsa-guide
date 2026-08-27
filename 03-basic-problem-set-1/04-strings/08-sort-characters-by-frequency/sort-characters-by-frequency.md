@@ -44,7 +44,7 @@ class Solution:
     # Function to return s's unique characters sorted by frequency, ties broken alphabetically
     def frequencySort(self, s: str) -> list[str]:
         # Your code goes here.
-        pass
+        return []
 
 
 # Reads the test case's s

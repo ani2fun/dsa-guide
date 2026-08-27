@@ -13,28 +13,28 @@ Given an integer n, return the factorial of n.
 
 Factorial of a non-negative integer, is the multiplication of all integers smaller than or equal to n (use 64-bits to return answer).
 
-## Example 1
+### Example 1
 
-> **Input :** n = 3  
-> **Output :** 6  
-> **Explanation :**  
+> - **Input :** n = 3
+> - **Output :** 6
+> - **Explanation :**
 > Factorial = 1 * 2 * 3 => 6
 
-## Example 2
+### Example 2
 
-> **Input :** n = 5  
-> **Output :** 120  
-> **Explanation :**  
+> - **Input :** n = 5
+> - **Output :** 120
+> - **Explanation :**
 > Factorial = 1 * 2 * 3 * 4 * 5 => 120
 
-## Example 3
+### Example 3
 
-> **Input :** n = 4  
-> **Output :** 24
+> - **Input :** n = 4
+> - **Output :** 24
 
 ## Constraints
 
-- `0 <= n <= 15`
+> - `0 <= n <= 15`
 
 ```python run
 class Solution:
