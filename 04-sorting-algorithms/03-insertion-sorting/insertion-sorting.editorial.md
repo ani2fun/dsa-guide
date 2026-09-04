@@ -15,23 +15,45 @@ Sorts an array one element at a time by repeatedly picking the next element and 
 from typing import List
 
 class Solution:
-    # Function to sort the array using insertion sort
     def insertionSort(self, nums: List[int]) -> List[int]:
-        n = len(nums) # Size of the array
 
-        # For every element in the array
-        for i in range(1, n):
-            key = nums[i] # Current element as key
-            j = i - 1
+    ##########
+    # Code 1 #
+    ##########
 
-            # Shift elements that are greater than key by one position
-            while j >= 0 and nums[j] > key:
-                nums[j + 1] = nums[j]
+        n = len(nums)  # number of elements to sort
+
+        # Grow a sorted prefix: after each pass, nums[0..i] is sorted.
+        for i in range(n):
+            j = i  # start at the new (unsorted) element
+
+            # Shift nums[i] left until it sits in the correct place
+            # inside the already-sorted prefix nums[0..i-1].
+            while j > 0 and nums[j - 1] > nums[j]:
+                # Adjacent swap: bubble the smaller value one step left.
+                nums[j - 1], nums[j] = nums[j], nums[j - 1]
                 j -= 1
 
-            nums[j + 1] = key # Insert key at correct position
-
         return nums
+
+    ##########
+    # Code 2 #
+    ##########
+    #     n = len(nums) # Size of the array
+
+    #     # For every element in the array
+    #     for i in range(1, n):
+    #         key = nums[i] # Current element as key
+    #         j = i - 1
+
+    #         # Shift elements that are greater than key by one position
+    #         while j >= 0 and nums[j] > key:
+    #             nums[j + 1] = nums[j]
+    #             j -= 1
+
+    #         nums[j + 1] = key # Insert key at correct position
+
+    #     return nums
 
 
 # Reads the test case's nums, e.g. [7, 4, 1, 5, 3]

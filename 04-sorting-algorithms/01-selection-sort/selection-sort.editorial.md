@@ -5,10 +5,11 @@
 
 ## Approach
 
-1. Select the starting index of the unsorted part using a loop with i from 0 to n-1.
-2. Find the smallest element in the range from i to n-1 using an inner loop.
-3. Swap this smallest element with the element at index i.
-4. Repeat the process for the next starting index.
+1. **Select the starting index** of the unsorted part using an outer loop with `i` from `0` to `n-2` (since the final element will automatically be in its correct sorted position).
+2. **Assume the current element is the minimum** by setting `min_index = i`.
+3. **Find the actual smallest element** in the remaining unsorted portion by using an inner loop with `j` from `i + 1` to `n - 1`. If a smaller element is found, update the `min_index`.
+4. **Swap the elements** at index `i` and `min_index`, but *only if* the `min_index` has changed from `i` (this avoids unnecessary swaps).
+5. **Repeat the process** for the next starting index until the entire array is sorted.
 
 ## Solution
 
@@ -20,24 +21,23 @@ class Solution:
         # Loop through unsorted part
         # of the array (0 to n-2)
         for i in range(len(nums) - 1):
-            ''' Assume current
-            element is minimum '''
+            # Assume current element is minimum hence we can take the current index and assign it to variable to track minimum index of an element.
             min_index = i
 
-            '''Find actual minimum in
-            unsorted part (i+1 to n-1) '''
+            # Find minimum element in unsorted part (i+1 to n-1) and take it's index.
+            # `j` begin with next index of `i` and traverse backwards to reach until 0 to find the minimum element and store mini_index
             for j in range(i + 1, len(nums)):
                 if nums[j] < nums[min_index]:
                     min_index = j
 
-            ''' Swap only if minIndex
-            changed (optimization) '''
+            # Swap only if minIndex changed (optimization)
+            # Otherwise you could have directly able to swap(mini_index, i) without `if min_index != i` condition. But this will not be helpful if all the elements are already sorted. Hence we add it to optimse in case of already sorted list
             if min_index != i:
                 nums[i], nums[min_index] = nums[min_index], nums[i]
 
         return nums
 
-
+# -- Driver Code
 # Reads the test case's nums, e.g. [7, 4, 1, 5, 3]
 inner = input().strip()[1:-1].strip()
 nums = [int(t) for t in inner.split(",")] if inner else []

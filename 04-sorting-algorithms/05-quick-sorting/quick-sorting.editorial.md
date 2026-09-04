@@ -36,6 +36,7 @@ This approach ensures that Quick Sort efficiently sorts the array using the divi
 import random
 from typing import List
 
+
 class Solution:
     # Function to partition the array
     def partition(self, arr: List[int], low: int, high: int) -> int:
@@ -44,27 +45,31 @@ class Solution:
         # Swap the random element with the first element
         arr[low], arr[randomIndex] = arr[randomIndex], arr[low]
 
+
         # Now choosing arr[low] as the pivot after the swap
         pivot = arr[low]
         # Starting index for left subarray
-        i = low
+        left = low
         # Starting index for right subarray
-        j = high
+        right = high
 
-        while i < j:
-            # Move i to the right until we find an element greater than the pivot
-            while arr[i] <= pivot and i <= high - 1:
-                i += 1
-            # Move j to the left until we find an element smaller than the pivot
-            while arr[j] > pivot and j >= low + 1:
-                j -= 1
-            # Swap elements at i and j if i is still less than j
-            if i < j:
-                arr[i], arr[j] = arr[j], arr[i]
+
+        while left < right:
+            # Move left to the right until we find an element greater than the pivot
+            while arr[left] <= pivot and left <= high - 1:
+                left += 1
+            # Move right to the left until we find an element smaller than the pivot
+            while arr[right] > pivot and right >= low + 1:
+                right -= 1
+            # Swap elements at left and right if left is still less than right
+            if left < right:
+                arr[left], arr[right] = arr[right], arr[left]
+
 
         # Pivot placed in correct position
-        arr[low], arr[j] = arr[j], arr[low]
-        return j
+        arr[low], arr[right] = arr[right], arr[low]
+        return right
+
 
     # Helper Function to perform the recursive quick sort
     def quickSortHelper(self, arr: List[int], low: int, high: int) -> None:
@@ -77,16 +82,20 @@ class Solution:
             # Sort the right subarray
             self.quickSortHelper(arr, pIndex + 1, high)
 
+
     # Function to perform quick sort on given array
     def quickSort(self, nums: List[int]) -> List[int]:
         # Get the size of array
         n = len(nums)
 
+
         # Perform quick sort
         self.quickSortHelper(nums, 0, n - 1)
 
+
         # Return sorted array
         return nums
+
 
 
 # Reads the test case's nums, e.g. [7, 4, 1, 5, 3]
@@ -99,40 +108,46 @@ print("[" + ", ".join(str(x) for x in result) + "]")
 ```java solution time=O(N log N) space=O(N)
 import java.util.*;
 
+
 public class Main {
     static class Solution {
         // Function to partition the array
         public int partition(int[] arr, int low, int high) {
+
 
             // Choosing a random index between low and high
             int randomIndex = low + new Random().nextInt(high - low + 1);
             // Swap the random element with the first element
             swap(arr, low, randomIndex);
 
+
             // Now choosing arr[low] as the pivot after the swap
             int pivot = arr[low];
-            int i = low;
-            int j = high;
+            int left = low;
+            int right = high;
 
-            while (i < j) {
-                // Move i to the right until we find an element greater than pivot
-                while (arr[i] <= pivot && i <= high - 1) {
-                    i++;
+
+            while (left < right) {
+                // Move left to the right until we find an element greater than pivot
+                while (arr[left] <= pivot && left <= high - 1) {
+                    left++;
                 }
-                // Move j to the left until we find an element smaller than pivot
-                while (arr[j] > pivot && j >= low + 1) {
-                    j--;
+                // Move right to the left until we find an element smaller than pivot
+                while (arr[right] > pivot && right >= low + 1) {
+                    right--;
                 }
                 // Swap if valid
-                if (i < j) {
-                    swap(arr, i, j);
+                if (left < right) {
+                    swap(arr, left, right);
                 }
             }
 
+
             // Place pivot in correct position
-            swap(arr, low, j);
-            return j;
+            swap(arr, low, right);
+            return right;
         }
+
 
         // Helper Function to perform recursive quick sort
         public void quickSortHelper(int[] arr, int low, int high) {
@@ -143,11 +158,13 @@ public class Main {
             }
         }
 
+
         // Function to perform quick sort
         public int[] quickSort(int[] nums) {
             quickSortHelper(nums, 0, nums.length - 1);
             return nums;
         }
+
 
         // Custom swap function
         private void swap(int[] arr, int i, int j) {
@@ -157,11 +174,13 @@ public class Main {
         }
     }
 
+
     public static void main(String[] args) {
         // Reads the test case's nums, e.g. [7, 4, 1, 5, 3]
         int[] nums = parseIntArray(new Scanner(System.in).nextLine());
         System.out.println(Arrays.toString(new Solution().quickSort(nums)));
     }
+
 
     // "[1, 2, 3]" -> {1, 2, 3}
     static int[] parseIntArray(String line) {
