@@ -1,0 +1,17 @@
+{
+  "args": [
+    {"id": "nums", "label": "nums", "type": "int[]", "placeholder": "[3, 3, 6, 1]"}
+  ],
+  "cases": [
+    {"args": {"nums": "[3, 3, 6, 1]"}, "expected": "6", "sample": true},
+    {"args": {"nums": "[3, 3, 0, 99, -40]"}, "expected": "99", "sample": true},
+    {"args": {"nums": "[1]"}, "expected": "1"},
+    {"args": {"nums": "[-3, -1, -7, -2]"}, "expected": "-1"},
+    {"args": {"nums": "[5, 5, 5, 5]"}, "expected": "5"},
+    {"args": {"nums": "[-10000, -9999]"}, "expected": "-9999"},
+    {"args": {"nums": "[10000, -10000]"}, "expected": "10000"},
+    {"args": {"nums": "[1, 2, 3, 4, 5]"}, "expected": "5"},
+    {"args": {"nums": "[5, 4, 3, 2, 1]"}, "expected": "5"},
+    {"args": {"nums": "[0]"}, "expected": "0"}
+  ]
+}
