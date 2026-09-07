@@ -31,7 +31,10 @@ class Solution:
                     min_index = j
 
             # Swap only if minIndex changed (optimization)
-            # Otherwise you could have directly able to swap(mini_index, i) without `if min_index != i` condition. But this will not be helpful if all the elements are already sorted. Hence we add it to optimse in case of already sorted list
+            # Skipping the swap when min_index == i avoids a wasted no-op write. This pays off most
+            # when the array is already sorted, since every pass would otherwise perform a needless
+            # self-swap. It does not reduce comparisons or enable early exit — the minimum-search
+            # still scans the full unsorted portion on every pass, regardless of order.
             if min_index != i:
                 nums[i], nums[min_index] = nums[min_index], nums[i]
 
