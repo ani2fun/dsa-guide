@@ -15,46 +15,54 @@ Use four boundary pointers — `top`, `bottom`, `left`, `right` — and shrink t
 ## Solution
 
 ```python solution time=O(N×M) space=O(1)
-from typing import List
-
 class Solution:
-    # Function to print matrix in spiral manner
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+    def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
+        # Handle the edge case of an empty matrix
+        if not matrix or not matrix[0]:
+            return []
+
         ans = []
 
-        # Number of rows
-        n = len(matrix)
+        m = len(matrix)     # number of rows
+        n = len(matrix[0])  # number of columns
 
-        # Number of columns
-        m = len(matrix[0])
+        # Initialize the 4 boundary pointers
+        left = 0
+        right = n - 1
+        top = 0
+        bottom = m - 1
 
-        # Initialize pointers for traversal
-        top, left = 0, 0
-        bottom, right = n - 1, m - 1
+        # Traverse the matrix in spiral order until boundaries cross
+        while left <= right and top <= bottom:
 
-        # Traverse the matrix in spiral order
-        while top <= bottom and left <= right:
-            # Traverse from left to right
+            # 1. Traverse from Left to Right along the current top row
             for i in range(left, right + 1):
                 ans.append(matrix[top][i])
-            top += 1
+            top += 1  # Shift the top boundary downwards by one
 
-            # Traverse from top to bottom
+            # 2. Traverse from Top to Bottom along the current right column
             for i in range(top, bottom + 1):
                 ans.append(matrix[i][right])
-            right -= 1
+            right -= 1  # Shift the right boundary leftwards by one
 
-            # Traverse from right to left
+
+            # if top <= bottom: protects against the single row case.
+            # Because we just did `top += 1`, top might now be greater than bottom.
+            # If so, we've already processed the last remaining row and should skip this step.
             if top <= bottom:
+                # 3. Traverse from Right to Left along the current bottom row
                 for i in range(right, left - 1, -1):
                     ans.append(matrix[bottom][i])
-                bottom -= 1
+                bottom -= 1  # Shift the bottom boundary upwards by one
 
-            # Traverse from bottom to top
+            # if left <= right: protects against the single column case.
+            # Because we just did `right -= 1`, left might now be greater than right.
+            # If so, we've already processed the last remaining column and should skip this step.
             if left <= right:
+                # 4. Traverse from Bottom to Top along the current left column
                 for i in range(bottom, top - 1, -1):
                     ans.append(matrix[i][left])
-                left += 1
+                left += 1  # Shift the left boundary rightwards by one
 
         return ans
 
