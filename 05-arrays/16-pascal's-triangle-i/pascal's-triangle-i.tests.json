@@ -1,0 +1,18 @@
+{
+  "args": [
+    {"id": "r", "label": "r", "type": "int", "placeholder": "5"},
+    {"id": "c", "label": "c", "type": "int", "placeholder": "3"}
+  ],
+  "cases": [
+    {"args": {"r": "4", "c": "2"}, "expected": "3", "sample": true},
+    {"args": {"r": "5", "c": "3"}, "expected": "6", "sample": true},
+    {"args": {"r": "1", "c": "1"}, "expected": "1"},
+    {"args": {"r": "2", "c": "1"}, "expected": "1"},
+    {"args": {"r": "2", "c": "2"}, "expected": "1"},
+    {"args": {"r": "6", "c": "3"}, "expected": "10"},
+    {"args": {"r": "10", "c": "5"}, "expected": "126"},
+    {"args": {"r": "7", "c": "4"}, "expected": "20"},
+    {"args": {"r": "30", "c": "1"}, "expected": "1"},
+    {"args": {"r": "30", "c": "30"}, "expected": "1"}
+  ]
+}
