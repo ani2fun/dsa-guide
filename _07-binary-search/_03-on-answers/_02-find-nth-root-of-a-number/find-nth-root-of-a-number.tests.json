@@ -1,0 +1,19 @@
+{
+  "args": [
+    {
+      "id": "TODO",
+      "label": "TODO",
+      "type": "int",
+      "placeholder": ""
+    }
+  ],
+  "cases": [
+    {
+      "args": {
+        "TODO": ""
+      },
+      "expected": "",
+      "sample": true
+    }
+  ]
+}
