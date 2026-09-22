@@ -1,0 +1,18 @@
+{
+  "args": [
+    {"id": "a", "label": "a", "type": "int", "placeholder": "3"},
+    {"id": "b", "label": "b", "type": "int", "placeholder": "7"}
+  ],
+  "cases": [
+    {"args": {"a": "3", "b": "7"}, "expected": "7", "sample": true},
+    {"args": {"a": "10", "b": "2"}, "expected": "10", "sample": true},
+    {"args": {"a": "5", "b": "5"}, "expected": "5", "sample": true},
+    {"args": {"a": "-1", "b": "-9"}, "expected": "-1"},
+    {"args": {"a": "0", "b": "-3"}, "expected": "0"},
+    {"args": {"a": "1000", "b": "-1000"}, "expected": "1000"},
+    {"args": {"a": "-1000", "b": "1000"}, "expected": "1000"},
+    {"args": {"a": "42", "b": "41"}, "expected": "42"},
+    {"args": {"a": "-5", "b": "0"}, "expected": "0"},
+    {"args": {"a": "999", "b": "1000"}, "expected": "1000"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "args": [
+    {"id": "op", "label": "op", "type": "string", "placeholder": "add"},
+    {"id": "a", "label": "a", "type": "int", "placeholder": "3"},
+    {"id": "b", "label": "b", "type": "int", "placeholder": "4"}
+  ],
+  "cases": [
+    {"args": {"op": "add", "a": "3", "b": "4"}, "expected": "7", "sample": true},
+    {"args": {"op": "divide", "a": "9", "b": "2"}, "expected": "4", "sample": true},
+    {"args": {"op": "power", "a": "2", "b": "3"}, "expected": "Invalid", "sample": true},
+    {"args": {"op": "subtract", "a": "10", "b": "25"}, "expected": "-15"},
+    {"args": {"op": "multiply", "a": "-6", "b": "7"}, "expected": "-42"},
+    {"args": {"op": "divide", "a": "-9", "b": "2"}, "expected": "-4"},
+    {"args": {"op": "divide", "a": "7", "b": "-2"}, "expected": "-3"},
+    {"args": {"op": "add", "a": "-3", "b": "-4"}, "expected": "-7"},
+    {"args": {"op": "multiply", "a": "0", "b": "999"}, "expected": "0"},
+    {"args": {"op": "ADD", "a": "1", "b": "2"}, "expected": "Invalid"},
+    {"args": {"op": "divide", "a": "1000", "b": "1"}, "expected": "1000"},
+    {"args": {"op": "subtract", "a": "0", "b": "0"}, "expected": "0"}
+  ]
+}
